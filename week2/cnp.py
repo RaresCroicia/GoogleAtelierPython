@@ -39,7 +39,9 @@ def data(cnp):
 
 def validare_judet(cnp):
     x = int (cnp[7:9])
-    if x in range(1,52):
+    if x in range(1,47):
+        return True
+    elif x in range(50, 53):
         return True
     else:
         return False
